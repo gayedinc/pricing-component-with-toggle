@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/toggle.css">
+  <script src="assets/js/toggle.js" defer></script>
+  <title>Pricing Component with Toggle</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Our Pricing</h1>
+      <div class="time-options">
+        <label><span>Annually</span> <input class="switch" type="checkbox" id="aylikOdeme"> <span>Monthly</span></label>
+      </div>
+    </div>
+    <div class="container-inner">
+      <!-- Basic Plan Start -->
+      <div class="basicPriceOption card">
+        <div class="basic-price-head">
+          <h2>Basic</h2>
+        <div class="price">
+          <span>$</span>
+          <h3 class="priceNum">199.99</h3>
+        </div>
+        <hr>
+        </div>
+        <div class="basicFeatures">
+          <p>500 GB Storage</p>
+          <hr>
+          <p>2 Users Allowed</p>
+          <hr>
+          <p>Send up to 3 GB</p>
+          <hr>
+        </div>
+        <div class="basicBtnTxt">
+          <button class="basicBtn">Learn More</button>
+        </div>
+      </div>
+      <!-- Basic Plan End -->
+      <!-- Pro Plan Start -->
+      <div class="proPriceOption card">
+        <div class="pro-price-head">
+          <h2>Professional</h2>
+        <div class="price pro-price">
+          <span>$</span>
+          <h3 class="priceNum">249.99</h3>
+        </div>
+        <hr>
+        </div>
+        <div class="proFeatures">
+          <p>1 TB Storage</p>
+          <hr>
+          <p>5 Users Allowed</p>
+          <hr>
+          <p>Send up to 10 GB</p>
+          <hr>
+        </div>
+        <div class="proBtnTxt">
+          <button class="proBtn">Learn More</button>
+        </div>
+      </div>
+      <!-- Pro Plan End -->
+      <!-- Master Plan Start -->
+      <div class="masterPriceOption card">
+        <div class="master-price-head">
+          <h2>Master</h2>
+        <div class="price">
+          <span>$</span>
+          <h3 class="priceNum">399.99</h3>
+        </div>
+        <hr>
+        </div>
+        <div class="masterFeatures">
+          <p>2 TB Storage</p>
+          <hr>
+          <p>10 Users Allowed</p>
+          <hr>
+          <p>Send up to 20 GB</p>
+          <hr>
+        </div>
+        <div class="masterBtnTxt">
+          <button class="masterBtn">Learn More</button>
+        </div>
+      </div>
+      <!-- Master Plan End -->
+    </div>
+  </div>
+</body>
+</html>

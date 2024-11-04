@@ -1,0 +1,271 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat";
+  background-color: #F7F7FE;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  background-image: url(../img/pricing-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 327px;
+  margin-inline: auto;
+  margin-top: 80px;
+  margin-bottom: 71px;
+}
+
+.header {
+  max-width: 239px;
+  margin-inline: auto;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+  color: #6E728E;
+  margin-bottom: 40px;
+}
+
+label {
+  display: flex;
+  gap: 24px;
+}
+
+.time-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch {
+  appearance: none;
+  background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  height: 32px;
+  width: 56px;
+  display: inline-flex;
+  margin: 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 4px;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.switch:after {
+  content: "";
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.switch:hover {
+  opacity: 0.5;
+}
+
+.switch:checked {
+  background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  justify-content: end;
+}
+
+.time-options span {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6E728E;  
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 31px 29px;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6E728E;
+  margin-bottom: 24px;
+}
+
+.proPriceOption {
+  background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
+  box-shadow: 0px 20px 40px 0px #D4D2F480;
+  color: #FFFFFF;
+}
+
+.proPriceOption h2, .pro-price span, .pro-price h3{
+  color: #fff;
+}
+
+.price {
+  color: #4A4D60;
+  display: flex;
+  justify-content: center;
+  gap: 7.46px;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.price span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.76px;
+  letter-spacing: -1.2000000476837158px;
+}
+
+.price h3 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -2.1600000858306885px;
+}
+
+hr {
+  color: #6E728E;
+}
+
+.basicFeatures p, .masterFeatures p {
+  padding-block: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6E728E;
+}
+
+.proFeatures p {
+  padding-block: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.basicBtn, .masterBtn, .proBtn {
+  background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.85px;
+  letter-spacing: 1.3928571939468384px;
+  padding: 14px 82px;
+  border-style: none;
+  border-radius: 6px;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.basicBtn:hover, .masterBtn:hover {
+  background: #FFFFFF;
+  color: #6D72DE;
+  border: 1px solid #6D72DE;
+}
+
+.proBtn {
+  background: #FFFFFF;
+  color: #6D72DE;
+}
+
+.proBtn:hover {
+  background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+@media (width > 1110px) {
+  .container {
+    background-image: url(../img/pricing-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .container-inner {
+    grid-template-columns: repeat(3, 350px);
+    gap: 0;
+    max-width: 1050px;
+    margin-top: 64px;
+    margin-bottom: 103px;
+    align-items: center;
+  }
+
+  .proPriceOption {
+    height: 501px;
+    padding: 55px 31px;
+  }
+
+  .basicPriceOption, .masterPriceOption {
+    height: 453px;
+    padding: 31px;
+  }
+}
